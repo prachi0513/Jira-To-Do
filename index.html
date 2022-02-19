@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="header">
+            <div class="heading">JIRA</div>
+            <div class="btn" id="add">
+                <div class="plus">+</div>
+            </div>
+        </div>
+
+        <div class="content" id="cont">
+            <!-- <div class="box" id="task_box">
+                <div class="box-header">
+                    <div class="heading">To-Do</div>
+                    <div class="btn-container">
+                        <div>-</div>
+                        <div>x</div>
+                    </div>
+                </div>
+                <textarea class="text"></textarea>
+            </div> -->
+        </div>
+
+        <div class="footer">@copyright Prachi vats</div>
+    </div>
+    
+    <!-- dialog box -->
+    
+    <div class="dialog-box" id="dialog-b">
+        <div class="dialog">
+            <div class="dialog-head">
+                <div class="dialog-header">
+                    <h2 class="add-task" >Add task</h2>
+                    <input type="text" placeholder="Enter the title" class="input-val" id="title_text">
+                    <div class="cross" id="close">x</div>
+                </div>
+            </div>
+            <div class="dialog-body">
+                <textarea class="type" id="todo_title"></textarea>
+            </div>
+            <div class="error off">
+                Fill title and text !!!!!
+            </div>
+            <div class="submit" onclick="addtask()">
+                <button>Add Task</button>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

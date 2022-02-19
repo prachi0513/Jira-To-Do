@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+
+/* main body starts */
+
+.main-body {
+    display: grid;
+    grid-template-rows: 30px auto 20px;
+    height: 100%;
+    position: relative;
+
+}
+
+.header {
+    display: flex;
+    /* position: fixed; */
+    align-items: center;
+   
+    padding: 15px;
+}
+
+.header .btn {
+    margin-left: auto;
+}
+
+.btn {
+    background-color: lightyellow;
+    display: flex;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #FFFF;
+    /* box-shadow: 1px 1.5px red; */
+    margin: 5px;
+}
+
+.btn .plus {
+    font-size: x-large;
+    font-weight: 800;
+    color: rgb(130, 175, 130);
+}
+
+.plus:hover {
+    transform: scale(1.2);
+}
+
+
+/* main-body ends */
+
+
+/* content starts */
+
+.box {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(131, 119, 119);
+    border-radius: 10px;
+}
+
+.box .box-header {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightyellow;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-container div {
+    height: 20px;
+    width: 20px;
+    margin: 4px;
+    background-color: rgb(100, 202, 122);
+    display: flex;
+    justify-content: center;
+}
+
+.box-header .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.text {
+    margin: 6px;
+    height: 77%;
+    width: 94%;
+    background-color: rgb(225, 225, 233);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* dialog box stats */
+
+.dialog-box {
+    height: 100%;
+    width: 100%;
+    /* background-color: whitesmoke; */
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.dialog {
+    height:360px;
+    width: 300px;
+    background-color: rgb(255, 233, 233);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.dialog-header {
+    display: flex;
+    background-color: rgb(250, 241, 241);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.input-val {
+    width: 80%;
+    margin: 4px 2px 4px 4px;
+}
+
+.cross{
+    margin: 8px 5px 11px 22px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 226, 226);
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+.dialog-body {
+   
+    height: 220px;
+    width: 290px;
+    background-color: #FFFFFF;
+}
+
+.type {
+    margin: 10px 10px 10px 14px;
+    height: 90%;
+    width: 90%;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    width: 100%;
+    
+}
+
+.add-task{
+margin: 6px;
+}
+
+.error{
+    text-align: center;
+    color: red;
+   
+}
+.off{
+    display: none;
+}
